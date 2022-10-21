@@ -1,0 +1,10 @@
+flask
+pandas
+keras
+tensorflow
+numpy
+h5py
+six
+requests
+urllib.request
+werkzeug.utils
