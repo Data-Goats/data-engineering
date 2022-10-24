@@ -3,12 +3,28 @@
 <html>
 <head>
 <title>Python Flask Upload and display image</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />        
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />         -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
-<p><h1 align="center">Python Flask Upload and display image</h1></p>
-<div class="container">
+<p><h1 align="center">Smile Detector AI</h1></p>
+<div class="frame">
+	<div class="center">
+		<div class="title">
+			<h1>Drop file to upload</h1>
+		</div>
+
+		<div class="dropzone">
+			<img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+			<input type="file" class="upload-input" />
+		</div>
+
+		<button type="button" class="btn" name="uploadbutton">Upload file</button>
+
+	</div>
+</div>
+<!-- <div class="container">
 <div class="row">
     <h2>Select a file to upload</h2>
     <p>
@@ -38,6 +54,6 @@
         </p>
     </form>
 </div>
-</div>
+</div> -->
 </body>
 </html>
