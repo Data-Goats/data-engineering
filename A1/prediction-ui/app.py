@@ -57,7 +57,8 @@ if __name__ == '__main__':
 
 # A decorator used to tell the application
 # which URL is associated function
-@app.route('/predictsmile', methods=["GET", "POST"])
+# Only allow post requests to this url
+@app.route('/predictsmile', methods=["POST",])
 def predict_smile():
     if request.method == "POST":
         prediction_input = [
